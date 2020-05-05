@@ -107,13 +107,13 @@ const PizzaForm = () => {
 
             <label htmlFor="name" >
                 Name:
-            <input id="name" type="text" name="name" value={inputForm.name} onChange={inputChange} />
+            <input id="name" type="text" name="name" value={inputForm.name} onChange={inputChange} data-cy="name" />
             {errors.name.length > 0 ? <p className="error">{errors.name}</p> : null}
             </label> 
            
             <label htmlFor="psize"> 
              Pizza Size:
-            <select id="psize" name="psize" onChange={inputChange}>
+            <select id="psize" name="psize" onChange={inputChange} data-cy="psize">
             <option  value="Personal" >Personal</option>
             <option  value="Small" >Small</option>
             <option  value="Medium">Medium</option>
@@ -126,13 +126,13 @@ const PizzaForm = () => {
             <label htmlFor="toppings">
                 Toppings:
                 Plain
-            <input id="toppings1" type="checkbox" name="toppings" value="Plain"   onChange={inputChange} />
+            <input id="toppings1" type="checkbox" name="toppings" value="Plain"   onChange={inputChange} data-cy="toppings" />
             Pepporoni
-            <input id="toppings2" type="checkbox" name="toppings"   value="Pepperoni"  onChange={inputChange} />
+            <input id="toppings2" type="checkbox" name="toppings"   value="Pepperoni"  onChange={inputChange} data-cy="toppings" />
             Cheese
-            <input id="toppings3" type="checkbox" name="toppings"  value="Cheese"  onChange={inputChange} />
+            <input id="toppings3" type="checkbox" name="toppings"  value="Cheese"  onChange={inputChange} data-cy="toppings" />
             Mushrooms
-            <input id="toppings4" type="checkbox" name="toppings" value="Mushrooms"  onChange={inputChange} />
+            <input id="toppings4" type="checkbox" name="toppings" value="Mushrooms"  onChange={inputChange} data-cy="toppings" />
             </label>
            
             <label htmlFor="instructions">
